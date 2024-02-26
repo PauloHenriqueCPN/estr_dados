@@ -60,15 +60,15 @@ func main() {
 		fmt.Println("4. Sair")
 
 		var opcao int
-		fmt.Scan(&opcao)
+		fmt.Scanln(&opcao)
 
 		switch opcao {
 		case 1:
 			var novoContato Contato
 			fmt.Println("Digite o nome do contato:")
-			fmt.Scan(&novoContato.Nome)
+			fmt.Scanln(&novoContato.Nome)
 			fmt.Println("Digite o e-mail do contato:")
-			fmt.Scan(&novoContato.Email)
+			fmt.Scanln(&novoContato.Email)
 			adicionarContato(novoContato, &contatos)
 		case 2:
 			excluirContato(&contatos)
