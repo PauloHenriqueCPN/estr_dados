@@ -25,7 +25,7 @@ func adicionarContato(contato Contato, arrayContatos *[5]Contato) {
 func excluirContato(arrayContatos *[5]Contato) {
 	for i := len(arrayContatos) - 1; i >= 0; i-- {
 		if arrayContatos[i].Nome != "" {
-			arrayContatos[i] = Contato{} // Limpa o contato
+			arrayContatos[i] = Contato{}
 			fmt.Println("Último contato excluído com sucesso!")
 			return
 		}
